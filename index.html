@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vaibhav Kumar | AI &amp; ML Developer</title>
+  <meta name="description" content="Portfolio of Vaibhav Kumar, AI/ML Developer specializing in Machine Learning, Deep Learning, Generative AI, Agentic Pipelines, and MLOps." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- EmailJS SDK for contact form -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    (function(){ emailjs.init({ publicKey: "OLO5NAeIfqkdu5rkJ" }); })();
+  </script>
+</head>
+<body>
+
+  <!-- ══ BACKGROUND SPOTLIGHT ══ -->
+  <div class="cursor-spotlight" id="cursor-spotlight"></div>
+
+  <!-- ══ PARTICLES CANVAS ══ -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- ══ NAV ══ -->
+  <nav id="navbar">
+    <div class="nav-logo">Vaibhav Kumar<span class="dot">.</span></div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#hero" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#certs" class="nav-link">Certifications</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <a href="https://github.com/Vaibhavsahkk" target="_blank" class="btn-hire magnetic-btn">GitHub</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ══ HERO ══ -->
+  <section id="hero">
+    <canvas id="hero-matrix-canvas"></canvas>
+    <div class="hero-bg-grid"></div>
+    <div class="hero-orb orb-1"></div>
+    <div class="hero-orb orb-2"></div>
+    <div class="hero-orb orb-3"></div>
+    <!-- animated SVG wave -->
+    <div class="hero-waves">
+      <svg class="wave wave-1" viewBox="0 0 1440 180" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,60 C240,120 480,0 720,60 C960,120 1200,0 1440,60 L1440,180 L0,180 Z" fill="rgba(212,175,55,0.04)"/>
+      </svg>
+      <svg class="wave wave-2" viewBox="0 0 1440 180" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,90 C360,20 720,160 1080,90 C1260,55 1380,110 1440,90 L1440,180 L0,180 Z" fill="rgba(126,200,227,0.03)"/>
+      </svg>
+      <svg class="wave wave-3" viewBox="0 0 1440 180" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,40 C180,100 360,10 540,70 C720,130 900,20 1080,80 C1260,140 1380,60 1440,80 L1440,180 L0,180 Z" fill="rgba(212,175,55,0.025)"/>
+      </svg>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          AI &amp; Machine Learning Systems
+        </div>
+        <h1 class="hero-title">
+          <span class="line">Hi, I'm</span>
+          <span class="line name-line"><span class="gold">Vaibhav Kumar</span></span>
+        </h1>
+        <div class="hero-role-title">
+          <span class="gold">AI / ML Developer</span> &amp; Systems Engineer
+        </div>
+        <div class="hero-typewriter">
+          <span class="tw-prefix">Building </span>
+          <span class="tw-text" id="typewriter"></span>
+          <span class="tw-cursor">|</span>
+        </div>
+        <p class="hero-desc">
+          Integrated M.Sc. Computer Science student at <strong class="highlight-text">CURAJ</strong>. Oracle Certified OCI Data Science &amp; GenAI Professional. Specializing in production ML systems, Deep Learning architectures (MoE), and Agentic AI pipelines.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn-primary magnetic-btn" id="hero-cta-projects">
+            <span>View AI/ML Projects</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#contact" class="btn-secondary magnetic-btn" id="hero-cta-contact">Let's Connect</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num" data-target="20">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">AI/ML Projects</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num" data-target="3">0</span>
+            <span class="stat-label">Internships</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num" data-target="2">0</span>
+            <span class="stat-label">OCI Certs</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="photo-frame card-3d" id="avatar-frame">
+          <div class="photo-ring ring-1"></div>
+          <div class="photo-ring ring-2"></div>
+          <div class="photo-ring ring-3"></div>
+          <div class="photo-glow"></div>
+          <div class="cyber-scan-line"></div>
+          <img src="vaibhav_3d_avatar.png" alt="Vaibhav Kumar - 3D AI Developer Avatar" class="profile-photo 3d-avatar-img" id="avatar-3d-img" />
+          <div class="photo-badge badge-oracle">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+            OCI Dual Certified
+          </div>
+          <div class="photo-badge badge-ai">
+            AI / ML Developer
+          </div>
+          <div class="photo-badge badge-interactive" id="badge-interactive-hint">
+            <span class="badge-pulse-dot"></span> Click 3D Avatar
+          </div>
+          <!-- Sleek Interactive Speech Overlay -->
+          <div class="avatar-speech-overlay" id="avatar-speech-bubble">
+            <div class="speech-glow"></div>
+            <span class="speech-icon">✨</span>
+            <span class="speech-text" id="speech-text-content">Hey! I am Vaibhav Kumar</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span>Scroll Down</span>
+    </div>
+  </section>
+
+  <!-- ══ MARQUEE TICKER 1 ══ -->
+  <div class="marquee-ticker">
+    <div class="marquee-track">
+      <span>AI / ML DEVELOPER</span><span class="ticker-dot">•</span>
+      <span>PYTORCH &amp; DL ARCHITECTURES</span><span class="ticker-dot">•</span>
+      <span>MIXTURE OF EXPERTS (MoE)</span><span class="ticker-dot">•</span>
+      <span>AGENTIC RAG &amp; LLMS</span><span class="ticker-dot">•</span>
+      <span>OCI DUAL CERTIFIED</span><span class="ticker-dot">•</span>
+      <span>QUANTUM MACHINE LEARNING</span><span class="ticker-dot">•</span>
+      <span>FASTAPI &amp; MLOPS</span><span class="ticker-dot">•</span>
+      <!-- repeat for continuous seamless animation -->
+      <span>AI / ML DEVELOPER</span><span class="ticker-dot">•</span>
+      <span>PYTORCH &amp; DL ARCHITECTURES</span><span class="ticker-dot">•</span>
+      <span>MIXTURE OF EXPERTS (MoE)</span><span class="ticker-dot">•</span>
+      <span>AGENTIC RAG &amp; LLMS</span><span class="ticker-dot">•</span>
+      <span>OCI DUAL CERTIFIED</span><span class="ticker-dot">•</span>
+      <span>QUANTUM MACHINE LEARNING</span><span class="ticker-dot">•</span>
+      <span>FASTAPI &amp; MLOPS</span><span class="ticker-dot">•</span>
+    </div>
+  </div>
+
+  <!-- ══ ABOUT ══ -->
+  <section id="about" class="section">
+    <div class="section-watermark">01</div>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">Who I Am &amp; <span class="gold">What I Build</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-card card-3d">
+          <div class="about-card-inner">
+            <div class="about-icon">
+              <svg viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" stroke="#D4AF37" stroke-width="1.5"/><path d="M8 21h8M12 17v4" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round"/><path d="M9 10l2 2 4-4" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>AI / ML Developer</h3>
+            <p>PyTorch, TensorFlow, Scikit-learn, XGBoost</p>
+            <p class="about-sub">Deep Learning &amp; MoE Architectures</p>
+            <p class="about-sub gold-text">20+ Projects Built</p>
+          </div>
+        </div>
+        <div class="about-card card-3d">
+          <div class="about-card-inner">
+            <div class="about-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="#7EC8E3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Generative AI &amp; Agents</h3>
+            <p>LangChain, Llama 3 70B, Ollama, FAISS</p>
+            <p class="about-sub">Multi-Agent Systems &amp; Local RAG</p>
+            <p class="about-sub gold-text">Vercel &amp; Streamlit Deployed</p>
+          </div>
+        </div>
+        <div class="about-card card-3d">
+          <div class="about-card-inner">
+            <div class="about-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" stroke="#D4AF37" stroke-width="1.5"/><path d="M8 12l2.5 2.5L16 9" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Dual OCI Certified</h3>
+            <p>OCI 2025 Data Science Professional</p>
+            <p class="about-sub">OCI 2025 Generative AI Professional</p>
+            <p class="about-sub gold-text">Oracle Cloud Infrastructure</p>
+          </div>
+        </div>
+      </div>
+      <div class="about-bio">
+        <p>
+          I am completing my Integrated M.Sc. in Computer Science at the <strong class="highlight-text">Central University of Rajasthan</strong> (2021 to 2026), with coursework spanning Data Structures, Algorithms, Machine Learning, and Quantum Computing. My M.Sc. dissertation, supervised by <strong class="highlight-text">Dr. Ravi Raj Choudhary</strong>, benchmarks Quantum ML (QSVM &amp; VQC) against classical models on real-world datasets. I conducted research at the <strong class="highlight-text">University of Hyderabad</strong> under Dr. Nagamani Molakatala, and attended the IIT Hyderabad workshop on Frontiers of Intelligent Computing.
+        </p>
+        <p style="margin-top:1rem;">
+          On the industry side, I have interned at <strong class="highlight-text">Celebal Technologies</strong> (Data Science) and <strong class="highlight-text">YBI Foundation</strong> (AI/ML, 6 months), building production data pipelines and deployed ML applications. I hold dual <strong class="highlight-text">Oracle OCI</strong> certifications in Data Science and Generative AI, and have built 20+ projects across cybersecurity ML, agentic RAG, computer vision, and full-stack AI platforms.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ DECORATIVE BANNER ══ -->
+  <div class="section-divider-bar">
+    <div class="divider-line"></div>
+    <div class="divider-node">✦</div>
+    <div class="divider-line"></div>
+  </div>
+
+  <!-- ══ SKILLS ══ -->
+  <section id="skills" class="section section-dark">
+    <div class="section-watermark">02</div>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Technical Stack</span>
+        <h2 class="section-title">Tools &amp; <span class="gold">Technologies</span></h2>
+      </div>
+
+      <!-- ── TOOL ICON GRID ── -->
+      <div class="tools-grid">
+
+        <!-- ML & DL -->
+        <div class="tool-group">
+          <p class="tool-group-label">Machine Learning &amp; Deep Learning</p>
+          <div class="tools-row">
+            <div class="tool-chip">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" fill="#EE4C2C" opacity=".15"/><path d="M8 8h2v8H8V8zm6 0h2v8h-2V8z" fill="#EE4C2C"/></svg>
+              <span>PyTorch</span>
+            </div>
+            <div class="tool-chip">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="#F7931E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>Scikit-learn</span>
+            </div>
+            <div class="tool-chip">
+              <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="7" height="7" rx="1" fill="#0085CA"/><rect x="14" y="3" width="7" height="7" rx="1" fill="#0085CA" opacity=".6"/><rect x="3" y="14" width="7" height="7" rx="1" fill="#0085CA" opacity=".6"/><rect x="14" y="14" width="7" height="7" rx="1" fill="#0085CA" opacity=".3"/></svg>
+              <span>XGBoost</span>
+            </div>
+            <div class="tool-chip">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" fill="#FF6F00" opacity=".15"/><path d="M8 16V8l4 4 4-4v8" stroke="#FF6F00" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>TensorFlow</span>
+            </div>
+            <div class="tool-chip">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#76B900" stroke-width="1.5"/><path d="M8 12l3 3 5-5" stroke="#76B900" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>OpenCV</span>
+            </div>
+            <div class="tool-chip">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M3 7h18M3 12h18M3 17h18" stroke="#D4AF37" stroke-width="2" stroke-linecap="round"/></svg>
+              <span>MoE Arch.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- GenAI -->
+        <div class="tool-group">
+          <p class="tool-group-label">Generative AI &amp; LLMs</p>
+          <div class="tools-row">
+            <div class="tool-chip">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="#1CB8FF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>LangChain</span>
+            </div>
+            <div class="tool-chip">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#7EC8E3" stroke-width="1.5"/><path d="M9 9l6 6M15 9l-6 6" stroke="#7EC8E3" stroke-width="1.8" stroke-linecap="round"/></svg>
+              <span>Llama 3 70B</span>
+            </div>
+            <div class="tool-chip">
+              <svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="3" stroke="#7EC8E3" stroke-width="1.5"/><path d="M8 12h8M12 8v8" stroke="#7EC8E3" stroke-width="1.8" stroke-linecap="round"/></svg>
+              <span>Ollama</span>
+            </div>
+            <div class="tool-chip">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" stroke="#A8E0F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>FAISS / ChromaDB</span>
+            </div>
+            <div class="tool-chip">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 2a10 10 0 100 20A10 10 0 0012 2zm0 6v4l3 3" stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round"/></svg>
+              <span>Groq API</span>
+            </div>
+            <div class="tool-chip">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" fill="#4285F4"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4" stroke="#4285F4" stroke-width="1.8" stroke-linecap="round"/></svg>
+              <span>Gemini API</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- MLOps -->
+        <div class="tool-group">
+          <p class="tool-group-label">MLOps &amp; Engineering</p>
+          <div class="tools-row">
+            <div class="tool-chip">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" fill="#3776AB" opacity=".15"/><path d="M9 7h2.5L13 12H9V7zM15 17h-2.5L11 12h4v5z" fill="#3776AB"/></svg>
+              <span>Python</span>
+            </div>
+            <div class="tool-chip">
+              <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="8" width="18" height="8" rx="2" stroke="#009688" stroke-width="1.5"/><path d="M7 8V6a2 2 0 012-2h6a2 2 0 012 2v2" stroke="#009688" stroke-width="1.5" stroke-linecap="round"/></svg>
+              <span>FastAPI</span>
+            </div>
+            <div class="tool-chip">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 4C8 4 4 8 4 12s4 8 8 8" stroke="#2496ED" stroke-width="1.8" stroke-linecap="round"/><path d="M20 12c0-4-4-8-8-8" stroke="#2496ED" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="2 2"/><circle cx="12" cy="12" r="3" stroke="#2496ED" stroke-width="1.5"/></svg>
+              <span>Docker</span>
+            </div>
+            <div class="tool-chip">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M3 17l9-13 9 13H3z" stroke="#FF4B4B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>Streamlit</span>
+            </div>
+            <div class="tool-chip">
+              <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="#F80000" stroke-width="1.5"/><path d="M7 12h10M12 7v10" stroke="#F80000" stroke-width="1.8" stroke-linecap="round"/></svg>
+              <span>Oracle OCI</span>
+            </div>
+            <div class="tool-chip">
+              <svg viewBox="0 0 24 24" fill="none"><ellipse cx="12" cy="8" rx="9" ry="3" stroke="#47A248" stroke-width="1.5"/><path d="M3 8v8c0 1.66 4.03 3 9 3s9-1.34 9-3V8" stroke="#47A248" stroke-width="1.5"/></svg>
+              <span>MongoDB</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quantum -->
+        <div class="tool-group">
+          <p class="tool-group-label">Quantum ML &amp; Research</p>
+          <div class="tools-row">
+            <div class="tool-chip">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" fill="#6929C4" opacity=".8"/><ellipse cx="12" cy="12" rx="10" ry="4" stroke="#6929C4" stroke-width="1.5"/><ellipse cx="12" cy="12" rx="10" ry="4" stroke="#6929C4" stroke-width="1.5" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4" stroke="#6929C4" stroke-width="1.5" transform="rotate(120 12 12)"/></svg>
+              <span>Qiskit</span>
+            </div>
+            <div class="tool-chip">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 2l2 7h7l-5.5 4 2 7L12 16l-5.5 4 2-7L3 9h7z" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>PennyLane</span>
+            </div>
+            <div class="tool-chip">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M2 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10S2 17.52 2 12z" stroke="#7EC8E3" stroke-width="1.5"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" stroke="#7EC8E3" stroke-width="1.3"/></svg>
+              <span>QSVM / VQC</span>
+            </div>
+            <div class="tool-chip">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>FFT Analysis</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- skill bars -->
+      <div class="skill-bars">
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>Machine Learning &amp; Deep Learning</span><span class="skill-pct">95%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill gold-bar" data-width="95"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>Generative AI &amp; Agentic RAG Systems</span><span class="skill-pct">90%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill blue-bar" data-width="90"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>MLOps &amp; Production Deployment</span><span class="skill-pct">88%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill gold-bar" data-width="88"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>Quantum ML Research</span><span class="skill-pct">82%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill blue-bar" data-width="82"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ PROJECTS ══ -->
+  <section id="projects" class="section">
+    <div class="section-watermark">03</div>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Portfolio</span>
+        <h2 class="section-title">Selected <span class="gold">Projects</span></h2>
+      </div>
+
+      <div class="project-filters">
+        <button class="filter-btn active magnetic-btn" data-filter="all">All AI/ML Projects</button>
+        <button class="filter-btn magnetic-btn" data-filter="ml">Core ML &amp; Deep Learning</button>
+        <button class="filter-btn magnetic-btn" data-filter="genai">Generative AI &amp; Agents</button>
+        <button class="filter-btn magnetic-btn" data-filter="quantum">Quantum ML &amp; Research</button>
+        <button class="filter-btn magnetic-btn" data-filter="fullstack">Full-Stack AI Apps</button>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project T3 -->
+        <article class="project-card card-3d featured" data-category="ml" id="proj-t3">
+          <div class="project-glow"></div>
+          <div class="featured-badge">High-Impact ML</div>
+          <div class="project-header">
+            <div class="project-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2l7 3v6c0 5-3.5 9.5-7 11C8.5 20.5 5 16 5 11V5l7-3z" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="project-tags">
+              <span class="tag">FastAPI</span><span class="tag">Scikit-learn</span><span class="tag">RandomForest</span>
+            </div>
+          </div>
+          <h3 class="project-title">Metadata Threat Radar (Ransomware ML API)</h3>
+          <p class="project-desc">Real-time ransomware attack detection REST API with <strong>91% recall</strong> on ransomware attack class. Engineered time-windowed metadata features from 8.37MB logs with Pydantic validation &amp; explainability layer.</p>
+          <div class="project-metrics">
+            <span class="metric">91% Attack Recall</span>
+            <span class="metric">FastAPI REST</span>
+          </div>
+          <a href="https://github.com/Vaibhavsahkk/Metadata-Threat-Radar" target="_blank" class="project-link magnetic-btn">
+            View on GitHub <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </article>
+
+        <!-- Project T4 -->
+        <article class="project-card card-3d featured" data-category="genai" id="proj-t4">
+          <div class="project-glow"></div>
+          <div class="featured-badge">Live Deployment</div>
+          <div class="project-header">
+            <div class="project-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="8" stroke="#7EC8E3" stroke-width="1.5"/><path d="M21 21l-4.35-4.35M11 8v3l2 2" stroke="#7EC8E3" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+            <div class="project-tags">
+              <span class="tag">LangChain</span><span class="tag">Groq / Llama3</span><span class="tag">Librosa</span>
+            </div>
+          </div>
+          <h3 class="project-title">Agentic Honeypot for Scam Detection</h3>
+          <p class="project-desc">Built &amp; deployed agentic scam honeypot on Vercel (GUVI Hackathon 2026). Integrates rule-based + Llama 3 70B scam detection, multi-turn adaptive persona, UPI/Phone extraction &amp; Librosa acoustic voice analysis.</p>
+          <div class="project-metrics">
+            <span class="metric">Llama 3 70B</span>
+            <span class="metric">Live on Vercel</span>
+          </div>
+          <a href="https://github.com/Vaibhavsahkk/Agentic-Honey-Pot-for-Scam-Detection-Intelligence-Extraction" target="_blank" class="project-link magnetic-btn">
+            View on GitHub <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </article>
+
+        <!-- Project T2 -->
+        <article class="project-card card-3d featured" data-category="ml" id="proj-t2">
+          <div class="project-glow"></div>
+          <div class="featured-badge">Deep Learning</div>
+          <div class="project-header">
+            <div class="project-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="#D4AF37" stroke-width="1.5"/><path d="M3 16l5-5 4 4 3-3 4 4" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="8.5" cy="8.5" r="1.5" fill="#D4AF37"/></svg></div>
+            <div class="project-tags">
+              <span class="tag">PyTorch</span><span class="tag">MoE</span><span class="tag">Computer Vision</span>
+            </div>
+          </div>
+          <h3 class="project-title">DaAIR-mini: Lightweight MoE Restoration Model</h3>
+          <p class="project-desc">Designed a 50,343-parameter MoE architecture (100x smaller than Restormer). Implemented low-rank DaLe factorised experts with soft-attention routing &amp; EMA stabilization. Achieved <strong>27.95 dB PSNR / 0.7923 SSIM</strong>.</p>
+          <div class="project-metrics">
+            <span class="metric">50k Params</span>
+            <span class="metric">27.95 dB PSNR</span>
+          </div>
+          <a href="#about" class="project-link magnetic-btn">Deep Learning Paper Project</a>
+        </article>
+
+        <!-- Project T1 -->
+        <article class="project-card card-3d" data-category="quantum" id="proj-t1">
+          <div class="project-glow"></div>
+          <div class="project-header">
+            <div class="project-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" fill="#A8E0F5"/><ellipse cx="12" cy="12" rx="10" ry="4" stroke="#7EC8E3" stroke-width="1.3"/><ellipse cx="12" cy="12" rx="10" ry="4" stroke="#7EC8E3" stroke-width="1.3" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4" stroke="#7EC8E3" stroke-width="1.3" transform="rotate(120 12 12)"/></svg></div>
+            <div class="project-tags">
+              <span class="tag">Qiskit</span><span class="tag">PennyLane</span><span class="tag">Python</span>
+            </div>
+          </div>
+          <h3 class="project-title">Classical vs Quantum ML Benchmark</h3>
+          <p class="project-desc">Benchmarked QSVM &amp; VQC against classical ML across 3 environmental datasets. Achieved <strong>+5.35% Quantum Advantage</strong> on Hill-Valley terrain classification using 6-qubit ZZ Feature Map (QSVM 94.24%).</p>
+          <div class="project-metrics">
+            <span class="metric">+5.35% Advantage</span>
+            <span class="metric">QSVM 94.24%</span>
+          </div>
+          <a href="#about" class="project-link magnetic-btn">M.Sc. Thesis Project</a>
+        </article>
+
+        <!-- Project S1 -->
+        <article class="project-card card-3d" data-category="ml" id="proj-s1">
+          <div class="project-glow"></div>
+          <div class="project-header">
+            <div class="project-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 3h18v4H3zM3 10h12v4H3zM3 17h8v4H3z" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="project-tags">
+              <span class="tag">XGBoost</span><span class="tag">TensorFlow</span><span class="tag">NCRB Data</span>
+            </div>
+          </div>
+          <h3 class="project-title">Smart Crime Analytics &amp; Forecasting</h3>
+          <p class="project-desc">Predicts crime trends for public safety using NCRB real-world data with socio-economic feature engineering. Achieved <strong>90.9% validation accuracy</strong> with XGBoost.</p>
+          <div class="project-metrics">
+            <span class="metric">90.9% Accuracy</span>
+            <span class="metric">XGBoost</span>
+          </div>
+          <a href="https://github.com/Vaibhavsahkk/Smart-Crime-Analytics" target="_blank" class="project-link magnetic-btn">
+            View on GitHub <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </article>
+
+        <!-- Project T6 -->
+        <article class="project-card card-3d" data-category="genai" id="proj-t6">
+          <div class="project-glow"></div>
+          <div class="project-header">
+            <div class="project-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" stroke="#7EC8E3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="project-tags">
+              <span class="tag">LangChain</span><span class="tag">Ollama</span><span class="tag">ChromaDB</span>
+            </div>
+          </div>
+          <h3 class="project-title">Local RAG Agent for Teen Addiction</h3>
+          <p class="project-desc">Privacy-preserving local RAG agent running TinyDolphin/Ollama over 3,000 teen addiction records. Converts tabular logs to natural language for offline semantic retrieval.</p>
+          <div class="project-metrics">
+            <span class="metric">100% Local RAG</span>
+            <span class="metric">ChromaDB</span>
+          </div>
+          <a href="https://github.com/Vaibhavsahkk/AI-Agent-for-Teen-Phone-Addiction-Analysis" target="_blank" class="project-link magnetic-btn">
+            View on GitHub <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </article>
+
+        <!-- Project T5 -->
+        <article class="project-card card-3d" data-category="fullstack" id="proj-t5">
+          <div class="project-glow"></div>
+          <div class="project-header">
+            <div class="project-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 15a3 3 0 100-6 3 3 0 000 6z" stroke="#D4AF37" stroke-width="1.5"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z" stroke="#D4AF37" stroke-width="1.5"/></svg></div>
+            <div class="project-tags">
+              <span class="tag">Streamlit</span><span class="tag">Power BI</span><span class="tag">DAX</span>
+            </div>
+          </div>
+          <h3 class="project-title">Smart Operations Triage System</h3>
+          <p class="project-desc">Sub-1ms NLP facility triage across 8 categories &amp; 4 priority SLAs. Streamlit application with SQLite audit trail and 12-measure Power BI DAX analytics dashboard.</p>
+          <div class="project-metrics">
+            <span class="metric">Sub-1ms NLP</span>
+            <span class="metric">Power BI DAX</span>
+          </div>
+          <a href="https://github.com/Vaibhavsahkk/smart-ops-triage" target="_blank" class="project-link magnetic-btn">
+            View on GitHub <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </article>
+
+        <!-- Project T8 -->
+        <article class="project-card card-3d" data-category="fullstack" id="proj-t8">
+          <div class="project-glow"></div>
+          <div class="project-header">
+            <div class="project-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#7EC8E3" stroke-width="1.5"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" stroke="#7EC8E3" stroke-width="1.3"/></svg></div>
+            <div class="project-tags">
+              <span class="tag">Next.js 15</span><span class="tag">WebGL</span><span class="tag">openCypher</span>
+            </div>
+          </div>
+          <h3 class="project-title">NexusMap Network Intelligence</h3>
+          <p class="project-desc">Executive graph platform rendering 300+ nodes &amp; 1400+ relationships via WebGL force canvas. Features 4-tier ranked search &amp; 5-hop warm intro path discovery on CognoDB.</p>
+          <div class="project-metrics">
+            <span class="metric">WebGL Graph</span>
+            <span class="metric">5-Hop Path Finder</span>
+          </div>
+          <a href="https://github.com/Vaibhavsahkk/nexusmap-network-intelligence" target="_blank" class="project-link magnetic-btn">
+            View on GitHub <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </article>
+
+        <!-- Project S5 -->
+        <article class="project-card card-3d" data-category="fullstack" id="proj-s5">
+          <div class="project-glow"></div>
+          <div class="project-header">
+            <div class="project-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="2" stroke="#D4AF37" stroke-width="1.5"/><path d="M9 9h6M9 12h6M9 15h4" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+            <div class="project-tags">
+              <span class="tag">.NET 8</span><span class="tag">React 18</span><span class="tag">SQL / Mongo</span>
+            </div>
+          </div>
+          <h3 class="project-title">Cloud Manufacturing Analytics Platform</h3>
+          <p class="project-desc">Full-stack enterprise platform with hybrid SQL Server + MongoDB persistence for time-series metrics. 10+ Swagger .NET 8 REST API endpoints and React dashboard.</p>
+          <div class="project-metrics">
+            <span class="metric">.NET 8 Clean Arch</span>
+            <span class="metric">Hybrid Persistence</span>
+          </div>
+          <a href="https://github.com/Vaibhavsahkk/Cloud-Native-Manufacturing-Analytics-Monitoring-Platform" target="_blank" class="project-link magnetic-btn">
+            View on GitHub <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ EXPERIENCE ══ -->
+  <section id="experience" class="section section-dark">
+    <div class="section-watermark">04</div>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Career Timeline</span>
+        <h2 class="section-title">Professional <span class="gold">Experience</span></h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item" id="exp-res">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card card-3d">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Research Intern (Quantum ML &amp; Computer Vision)</h3>
+                <p class="timeline-company">University of Hyderabad (SCIS)</p>
+              </div>
+              <span class="timeline-date">Jan 2026 to May 2026</span>
+            </div>
+            <p class="timeline-sup">Supervisor: <strong>Dr. Nagamani Molakatala</strong>, Associate Professor</p>
+            <ul class="timeline-bullets">
+              <li>Designed and benchmarked Quantum ML pipelines (Qiskit + PennyLane) comparing QSVM and VQC against classical models.</li>
+              <li>Attended IIT Hyderabad workshop on "Frontiers of Intelligent Computing: Computer Vision &amp; Quantum Computing".</li>
+              <li>Validated quantum kernel self-fidelity, state normalisation, and FFT frequency feature extraction for terrain classification.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="pill pill-gold">Quantum ML</span><span class="pill">Qiskit</span><span class="pill">PennyLane</span><span class="pill">Computer Vision</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" id="exp-celebal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card card-3d">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Summer Intern (Data Science &amp; ML)</h3>
+                <p class="timeline-company">Celebal Technologies</p>
+              </div>
+              <span class="timeline-date">Jun 2025 to Aug 2025</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Applied industry-standard data cleaning: missing value imputation, categorical encoding, IQR outlier detection, and StandardScaler normalization.</li>
+              <li>Produced analytical reports using Pandas profiling, Matplotlib, Seaborn, and Pearson correlation heatmaps.</li>
+              <li>Assisted in building ETL ingestion pipelines and training classification models for internal analytics use cases.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="pill">Data Science</span><span class="pill">ETL Pipelines</span><span class="pill">EDA</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" id="exp-ybi">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card card-3d">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Intern (AI &amp; Machine Learning)</h3>
+                <p class="timeline-company">YBI Foundation (6 Months)</p>
+              </div>
+              <span class="timeline-date">Jun 2024 to Dec 2024</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Built multi-model comparison pipeline on Breast Cancer dataset with GridSearchCV &amp; RandomizedSearchCV.</li>
+              <li>Built RAG Q&amp;A chatbot on loan dataset using FAISS vector index and local TinyDolphin/Ollama.</li>
+              <li>Deployed Movie Recommendation System as interactive Streamlit web app using CountVectorizer + Cosine similarity.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="pill">Deep Learning</span><span class="pill">RAG &amp; LLMs</span><span class="pill">Streamlit Deployment</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CERTIFICATIONS ══ -->
+  <section id="certs" class="section">
+    <div class="section-watermark">05</div>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Credentials</span>
+        <h2 class="section-title">Certifications &amp; <span class="gold">Honors</span></h2>
+      </div>
+
+      <div class="certs-grid">
+        <div class="cert-card card-3d">
+          <div class="cert-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 1l3.09 6.26L22 8.27l-5 4.87 1.18 6.88L12 16.77l-6.18 3.25L7 13.14 2 8.27l6.91-1.01L12 1z" stroke="#D4AF37" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="cert-info">
+            <p class="cert-name">OCI 2025 Data Science Professional</p>
+            <p class="cert-issuer">Oracle University Certification</p>
+            <p class="cert-date gold-text">Active: Oct 2025 to Oct 2027</p>
+          </div>
+        </div>
+
+        <div class="cert-card card-3d">
+          <div class="cert-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 1l3.09 6.26L22 8.27l-5 4.87 1.18 6.88L12 16.77l-6.18 3.25L7 13.14 2 8.27l6.91-1.01L12 1z" stroke="#7EC8E3" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="cert-info">
+            <p class="cert-name">OCI 2025 Generative AI Professional</p>
+            <p class="cert-issuer">Oracle University Certification</p>
+            <p class="cert-date gold-text">Active: Oct 2025 to Oct 2027</p>
+          </div>
+        </div>
+
+        <div class="cert-card card-3d">
+          <div class="cert-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="2" width="16" height="20" rx="2" stroke="#D4AF37" stroke-width="1.4"/><path d="M8 10h8M8 14h5" stroke="#D4AF37" stroke-width="1.4" stroke-linecap="round"/></svg></div>
+          <div class="cert-info">
+            <p class="cert-name">Anthropic MCP Integration</p>
+            <p class="cert-issuer">DeepLearning.AI Certificate</p>
+            <p class="cert-date gold-text">Building Rich-Context AI Apps</p>
+          </div>
+        </div>
+
+        <div class="cert-card card-3d">
+          <div class="cert-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z" stroke="#7EC8E3" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="cert-info">
+            <p class="cert-name">McKinsey Forward Program</p>
+            <p class="cert-issuer">McKinsey &amp; Company</p>
+            <p class="cert-date gold-text">Problem Solving &amp; Business Analytics</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Additional Badges -->
+      <div class="other-certs">
+        <span class="cert-pill">NVIDIA Deep Learning</span>
+        <span class="cert-pill">SAP S/4HANA ERP</span>
+        <span class="cert-pill">UiPath Automation Developer</span>
+        <span class="cert-pill">TCS iON Young Professional</span>
+        <span class="cert-pill">Microsoft AI Governance</span>
+        <span class="cert-pill">Google Cloud Certified Badges</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CONTACT ══ -->
+  <section id="contact" class="section section-dark">
+    <div class="section-watermark">06</div>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Let's <span class="gold">Connect</span></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p class="contact-desc">
+            Specializing in end-to-end Machine Learning, Deep Learning architectures, and Generative AI systems. Open for research collaborations, technical inquiries, and project discussions.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:vaibhavkkr24@gmail.com" class="contact-item magnetic-btn" id="contact-email">
+              <div class="contact-item-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="#D4AF37" stroke-width="1.5"/><path d="M22 6l-10 7L2 6" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+              <div>
+                <p class="contact-item-label">Email</p>
+                <p class="contact-item-value">vaibhavkkr24@gmail.com</p>
+              </div>
+            </a>
+            <a href="https://linkedin.com/in/vaibhavsahkk" target="_blank" class="contact-item magnetic-btn" id="contact-linkedin">
+              <div class="contact-item-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="2" y="7" width="20" height="14" rx="2" stroke="#7EC8E3" stroke-width="1.5"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2" stroke="#7EC8E3" stroke-width="1.5" stroke-linecap="round"/><path d="M12 12v4M10 14h4" stroke="#7EC8E3" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+              <div>
+                <p class="contact-item-label">LinkedIn</p>
+                <p class="contact-item-value">linkedin.com/in/vaibhavsahkk</p>
+              </div>
+            </a>
+            <a href="https://github.com/Vaibhavsahkk" target="_blank" class="contact-item magnetic-btn" id="contact-github">
+              <div class="contact-item-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              <div>
+                <p class="contact-item-label">GitHub</p>
+                <p class="contact-item-value">github.com/Vaibhavsahkk</p>
+              </div>
+            </a>
+            <a href="tel:+917004931269" class="contact-item magnetic-btn" id="contact-phone">
+              <div class="contact-item-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.04 2.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" stroke="#7EC8E3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              <div>
+                <p class="contact-item-label">Phone</p>
+                <p class="contact-item-value">+91-7004931269</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <form class="contact-form card-3d" id="contact-form" onsubmit="handleForm(event)">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary magnetic-btn" id="form-submit">
+            <span>Send Message</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ══ -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <p class="footer-name">Vaibhav Kumar | AI &amp; ML Developer</p>
+      <p class="footer-copy">© 2026 | Built with passion &amp; precision. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="https://github.com/Vaibhavsahkk" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/vaibhavsahkk" target="_blank">LinkedIn</a>
+        <a href="mailto:vaibhavkkr24@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
